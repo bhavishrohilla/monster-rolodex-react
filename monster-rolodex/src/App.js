@@ -5,10 +5,11 @@ import './App.css';
 
 class App extends Component {
 constructor() {
-  super();         //super()
+  super();
 
   this.state = {
-    monsters : []
+    monsters : [],
+    searchField: ''
   };
 }
 //now using lifecycle method
@@ -23,6 +24,12 @@ componentDidMount() {
   render() {
     return(
       <div className="App">
+        <input type='search' placeholder='Search monster' 
+      onChange={e=>{
+        this.setState({searchField: e.target.value})
+        console.log(this.state)
+        }}
+        />
         <CardList monsters={this.state.monsters}/>
         
     </div>
