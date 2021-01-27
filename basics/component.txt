@@ -1,0 +1,22 @@
+1-----Stateless funtional component------
+JAVASCRIPT FUNCTIONS
+
+
+function Welcome(props) {
+    return <h1>Hello,{props.name}</h1>
+}
+
+
+
+2.-----Statefull Class component------------
+
+Class extending Component Class
+Render method using HTML
+
+
+
+class Welcome extends React.Component {
+    render() {
+        return <h1>Hello, {this.props.name}</h1>
+    }
+}

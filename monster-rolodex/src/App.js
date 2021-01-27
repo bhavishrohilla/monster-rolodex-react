@@ -27,7 +27,7 @@ componentDidMount() {
         <input type='search' placeholder='Search monster' 
       onChange={e=>{
         this.setState({searchField: e.target.value})
-        console.log(this.state)
+        console.log(thi)
         }}
         />
         <CardList monsters={this.state.monsters}/>
